@@ -1,7 +1,7 @@
 const year = document.getElementById("year");
 if (year) year.textContent = new Date().getFullYear();
 
-// Mobile nav
+// Mobile navv
 const burger = document.getElementById("burger");
 const mobileNav = document.getElementById("mobileNav");
 if (burger && mobileNav) {
