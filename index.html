@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Care-Orchestrator – Anschlussversorgung nach Krankenhausentlassung</title>
+  <meta name="description" content="Privater Koordinationsservice für Angehörige: Wir organisieren Anschlussversorgung nach Krankenhausentlassung – strukturiert, schnell, mit Plan A/B/C. Kein Pflegedienst." />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Care-Orchestrator – Anschlussversorgung nach Krankenhausentlassung" />
+  <meta property="og:description" content="Koordination statt Pflege: Anbieter, Dokumente, Startplan, Stabilisierung." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__left">
+        <span class="pill">Deutschland • Privat</span>
+        <span class="muted" data-i18n="topbar.note">Kein Pflegedienst – wir koordinieren.</span>
+      </div>
+      <div class="topbar__right">
+        <a class="toplink" href="tel:+49XXXXXXXXXX">+49 XX XXXX XXXX</a>
+        <span class="muted">•</span>
+        <a class="toplink" href="mailto:kontakt@care-orchestrator.de">kontakt@care-orchestrator.de</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#home" aria-label="Care-Orchestrator Home">
+        <div class="brand__mark" aria-hidden="true"></div>
+        <div class="brand__text">
+          <div class="brand__name">Care-Orchestrator</div>
+          <div class="brand__tag" data-i18n="brand.tag">Akut-Stabilisierung nach Entlassung</div>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="#ablauf" data-i18n="nav.flow">Ablauf</a>
+        <a href="#pakete" data-i18n="nav.packages">Pakete</a>
+        <a href="#usecases" data-i18n="nav.usecases">Use-Cases</a>
+        <a href="#vertrauen" data-i18n="nav.trust">Vertrauen</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
+        <a href="#kontakt" data-i18n="nav.contact">Kontakt</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="lang" id="langToggle" type="button" aria-label="Sprache wechseln">DE</button>
+        <a class="btn btn--primary" href="#kontakt" data-i18n="cta.book">15-Min Scoping Call</a>
+      </div>
+
+      <button class="burger" id="burger" type="button" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div class="mobileNav" id="mobileNav" hidden>
+      <div class="container">
+        <a href="#ablauf" data-i18n="nav.flow">Ablauf</a>
+        <a href="#pakete" data-i18n="nav.packages">Pakete</a>
+        <a href="#usecases" data-i18n="nav.usecases">Use-Cases</a>
+        <a href="#vertrauen" data-i18n="nav.trust">Vertrauen</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
+        <a href="#kontakt" data-i18n="nav.contact">Kontakt</a>
+        <div class="mobileNav__cta">
+          <a class="btn btn--primary" href="#kontakt" data-i18n="cta.book">15-Min Scoping Call</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="home">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="kicker" data-i18n="hero.kicker">Soforthilfe nach Krankenhaus-Entlassung</p>
+          <h1 data-i18n="hero.h1">
+            Wir organisieren die Anschluss-Pflege – schnell, strukturiert, privat.
+          </h1>
+          <p class="lead" data-i18n="hero.lead">
+            Anbieter anfragen, Dokumente ordnen, Startplan erstellen und 7–14 Tage stabilisieren.
+            <b>Kein Pflegedienst</b> – wir koordinieren.
+          </p>
+
+          <div class="hero__proof">
+            <div class="proof">
+              <div class="proof__num">24–48h</div>
+              <div class="proof__txt" data-i18n="hero.proof1">Startplan & Provider-Sprint</div>
+            </div>
+            <div class="proof">
+              <div class="proof__num">1</div>
+              <div class="proof__txt" data-i18n="hero.proof2">Ansprechpartner statt Telefon-Chaos</div>
+            </div>
+            <div class="proof">
+              <div class="proof__num">A/B/C</div>
+              <div class="proof__txt" data-i18n="hero.proof3">Plan B/C falls Kapazitäten fehlen</div>
+            </div>
+          </div>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#kontakt" data-i18n="cta.book">15-Min Scoping Call</a>
+            <a class="btn btn--ghost" href="#ablauf" data-i18n="cta.how">So funktioniert’s</a>
+          </div>
+
+          <p class="fine" data-i18n="hero.disclaimer">
+            Notfall? Bei akuter Verschlechterung bitte 112 / Notaufnahme. Wir geben keine medizinische Beratung.
+          </p>
+        </div>
+
+        <div class="hero__card">
+          <div class="card">
+            <h3 data-i18n="card.h">Schnell-Check (60 Sek.)</h3>
+            <p class="muted" data-i18n="card.p">Damit wir sofort sagen können, ob ambulant realistisch ist.</p>
+
+            <ul class="checklist">
+              <li><span class="dot"></span><span data-i18n="card.c1">Entlassdatum + PLZ</span></li>
+              <li><span class="dot"></span><span data-i18n="card.c2">Bedarf (Wunde/Medikation/Hilfsmittel/Betreuung)</span></li>
+              <li><span class="dot"></span><span data-i18n="card.c3">1 Kontaktperson erreichbar</span></li>
+              <li><span class="dot"></span><span data-i18n="card.c4">Kasse/Versicherung (GKV/PKV)</span></li>
+            </ul>
+
+            <div class="card__actions">
+              <a class="btn btn--primary btn--full" href="#kontakt" data-i18n="card.cta">Jetzt starten</a>
+              <a class="btn btn--ghost btn--full" href="tel:+49XXXXXXXXXX" data-i18n="card.call">Anrufen</a>
+            </div>
+
+            <div class="note">
+              <b data-i18n="note.title">Wichtig:</b>
+              <span data-i18n="note.text">Wir garantieren keine Kapazitäten – wir koordinieren maximal und transparent.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ablauf -->
+    <section class="section" id="ablauf">
+      <div class="container">
+        <p class="kicker" data-i18n="flow.kicker">Ablauf</p>
+        <h2 data-i18n="flow.h2">Schritt für Schritt – vom Erstkontakt bis Stabilisierung</h2>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step__n">1</div>
+            <h3 data-i18n="flow.s1t">10-Min Pre-Check</h3>
+            <p data-i18n="flow.s1p">PLZ, Entlassdatum, Bedarf, Kontaktperson, realistischer Pfad.</p>
+          </div>
+          <div class="step">
+            <div class="step__n">2</div>
+            <h3 data-i18n="flow.s2t">Scoping Call</h3>
+            <p data-i18n="flow.s2p">Use-Case zuordnen, Paket & Timebox, Plan A/B/C.</p>
+          </div>
+          <div class="step">
+            <div class="step__n">3</div>
+            <h3 data-i18n="flow.s3t">Onboarding & sichere Dokumente</h3>
+            <p data-i18n="flow.s3p">Einwilligung (DSGVO), optional Vollmacht, Zahlung, Upload.</p>
+          </div>
+          <div class="step">
+            <div class="step__n">4</div>
+            <h3 data-i18n="flow.s4t">Provider-Sprint</h3>
+            <p data-i18n="flow.s4p">Parallel anfragen, nachhaken (24–48h), Alternativen.</p>
+          </div>
+          <div class="step">
+            <div class="step__n">5</div>
+            <h3 data-i18n="flow.s5t">Start & Stabilisierung (7–14 Tage)</h3>
+            <p data-i18n="flow.s5p">Updates, Plan-B-Wechsel, Übergabebericht & Next Steps.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pakete -->
+    <section class="section section--alt" id="pakete">
+      <div class="container">
+        <p class="kicker" data-i18n="pkg.kicker">Pakete</p>
+        <h2 data-i18n="pkg.h2">Klarer Scope. Klare Deliverables. Transparente Timebox.</h2>
+
+        <div class="cards">
+          <article class="plan">
+            <div class="plan__top">
+              <h3>QuickStart</h3>
+              <p class="muted" data-i18n="pkg.qsub">Wenn Entlassung sehr kurzfristig ist.</p>
+            </div>
+            <div class="plan__meta">
+              <span class="tag">0–72h</span>
+              <span class="tag" data-i18n="pkg.private">privat</span>
+            </div>
+            <ul>
+              <li data-i18n="pkg.q1">Startplan + Prioritäten</li>
+              <li data-i18n="pkg.q2">Provider-Anfragen (Welle 1/2)</li>
+              <li data-i18n="pkg.q3">Dokumenten-Tracker</li>
+              <li data-i18n="pkg.q4">Plan B/C vorbereitet</li>
+            </ul>
+            <a class="btn btn--primary btn--full" href="#kontakt" data-i18n="pkg.cta">Anfragen</a>
+          </article>
+
+          <article class="plan plan--featured">
+            <div class="ribbon" data-i18n="pkg.best">Meist gewählt</div>
+            <div class="plan__top">
+              <h3 data-i18n="pkg.stab">Stabilisierung</h3>
+              <p class="muted" data-i18n="pkg.ssub">Typischer Entlassfall (ambulant).</p>
+            </div>
+            <div class="plan__meta">
+              <span class="tag">14 Tage</span>
+              <span class="tag" data-i18n="pkg.private">privat</span>
+            </div>
+            <ul>
+              <li data-i18n="pkg.s1">Koordination & Nachhaken</li>
+              <li data-i18n="pkg.s2">Hilfsmittel/Verordnung-Workflow</li>
+              <li data-i18n="pkg.s3">Regelmäßige Status-Updates</li>
+              <li data-i18n="pkg.s4">Übergabebericht + Next Steps</li>
+            </ul>
+            <a class="btn btn--primary btn--full" href="#kontakt" data-i18n="pkg.cta">Anfragen</a>
+          </article>
+
+          <article class="plan">
+            <div class="plan__top">
+              <h3 data-i18n="pkg.complex">Komplex</h3>
+              <p class="muted" data-i18n="pkg.csub">Übergangslösungen & mehrere Stakeholder.</p>
+            </div>
+            <div class="plan__meta">
+              <span class="tag" data-i18n="pkg.up">bis 30 Tage</span>
+              <span class="tag" data-i18n="pkg.private">privat</span>
+            </div>
+            <ul>
+              <li data-i18n="pkg.c1">Kurzzeitpflege/Reha-Pfad</li>
+              <li data-i18n="pkg.c2">Pflegegrad-Enabler (organisatorisch)</li>
+              <li data-i18n="pkg.c3">Mehr Intensität + Eskalationen</li>
+              <li data-i18n="pkg.c4">Stabiler Übergabe-Plan</li>
+            </ul>
+            <a class="btn btn--primary btn--full" href="#kontakt" data-i18n="pkg.cta">Anfragen</a>
+          </article>
+        </div>
+
+        <p class="fine" data-i18n="pkg.fine">
+          Hinweis: Keine Pflege-/Behandlungsleistung. Wir koordinieren Anbieter und Prozesse. Preise sind Beispiele – final nach Scoping.
+        </p>
+      </div>
+    </section>
+
+    <!-- Use cases -->
+    <section class="section" id="usecases">
+      <div class="container">
+        <p class="kicker" data-i18n="uc.kicker">Use-Cases</p>
+        <h2 data-i18n="uc.h2">Wann wir besonders helfen</h2>
+
+        <div class="grid">
+          <div class="tile"><h3 data-i18n="uc.u1t">Wundversorgung / Verbandwechsel</h3><p data-i18n="uc.u1p">Koordination HKP/Anbieter + Verordnung-Workflow.</p></div>
+          <div class="tile"><h3 data-i18n="uc.u2t">Medikamentengabe / Injektionen</h3><p data-i18n="uc.u2p">Plan, Zeitfenster, zuverlässiger Start.</p></div>
+          <div class="tile"><h3 data-i18n="uc.u3t">Hilfsmittel & Mobilität</h3><p data-i18n="uc.u3p">Pflegebett/Rollator: Verordnung → Lieferung → Aufbau.</p></div>
+          <div class="tile"><h3 data-i18n="uc.u4t">Demenz & Angehörigen-Entlastung</h3><p data-i18n="uc.u4p">Struktur, passende Angebote (z. B. §45b), Entlastung.</p></div>
+          <div class="tile"><h3 data-i18n="uc.u5t">Rush-Entlassung (Fr/Feiertag)</h3><p data-i18n="uc.u5p">Schnelles Scoping, Plan A/B/C, transparente Updates.</p></div>
+          <div class="tile"><h3 data-i18n="uc.u6t">Übergangslösungen</h3><p data-i18n="uc.u6p">Kurzzeitpflege/Reha-Anschluss koordinieren.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vertrauen -->
+    <section class="section section--alt" id="vertrauen">
+      <div class="container">
+        <p class="kicker" data-i18n="trust.kicker">Vertrauen</p>
+        <h2 data-i18n="trust.h2">Seriös. Transparent. Datenschutz-klar.</h2>
+
+        <div class="trust">
+          <div class="trust__box">
+            <h3 data-i18n="trust.t1">Datenschutz by Design</h3>
+            <p data-i18n="trust.p1">Gesundheitsdaten nur mit Einwilligung, minimaler Zugriff, sichere Übermittlung.</p>
+          </div>
+          <div class="trust__box">
+            <h3 data-i18n="trust.t2">Klare Abgrenzung</h3>
+            <p data-i18n="trust.p2">Wir sind kein Pflegedienst. Wir koordinieren Anbieter und Prozesse.</p>
+          </div>
+          <div class="trust__box">
+            <h3 data-i18n="trust.t3">Messbare Deliverables</h3>
+            <p data-i18n="trust.p3">Startplan, Dokumenten-Tracker, Status-Updates, Übergabebericht.</p>
+          </div>
+        </div>
+
+        <div class="quote">
+          <p><b data-i18n="quote.t">Beispiel-Feedback (Platzhalter):</b></p>
+          <p data-i18n="quote.p">„Ohne euch hätten wir das niemals so schnell organisiert. Endlich ein Plan und klare Updates.“</p>
+          <p class="muted" data-i18n="quote.s">— Angehörige, anonymisiert</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <p class="kicker">FAQ</p>
+        <h2 data-i18n="faq.h2">Häufige Fragen</h2>
+
+        <div class="faq">
+          <details>
+            <summary data-i18n="faq.q1">Seid ihr ein Pflegedienst?</summary>
+            <p data-i18n="faq.a1">Nein. Wir koordinieren. Pflege/Behandlung machen zugelassene Anbieter.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q2">Garantiert ihr einen Platz / einen Pflegedienst?</summary>
+            <p data-i18n="faq.a2">Nein. Wir garantieren keine Kapazitäten. Wir koordinieren maximal, parallel und transparent mit Plan B/C.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q3">Wie schnell könnt ihr starten?</summary>
+            <p data-i18n="faq.a3">Typisch innerhalb von 24–48h mit Startplan und ersten Anfragen – je nach Fall und Dokumentenlage.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q4">Wie läuft die Zahlung?</summary>
+            <p data-i18n="faq.a4">Nach Scoping vereinbaren wir Paket/Timebox. Zahlung per Rechnung oder Online-Zahlung (je nach Setup).</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section class="section section--alt" id="kontakt">
+      <div class="container">
+        <p class="kicker" data-i18n="contact.kicker">Kontakt</p>
+        <h2 data-i18n="contact.h2">Starten wir mit einem 15-Min Scoping Call</h2>
+
+        <div class="contact">
+          <div class="contact__left">
+            <h3 data-i18n="contact.leftT">So erreichst du uns</h3>
+            <p class="muted" data-i18n="contact.leftP">Für schnelle Einschätzung: Entlassdatum, PLZ, Bedarf, Versicherung, Kontaktperson.</p>
+
+            <div class="contact__links">
+              <a class="btn btn--primary" href="tel:+49XXXXXXXXXX" data-i18n="contact.call">Anrufen</a>
+              <a class="btn btn--ghost" href="mailto:kontakt@care-orchestrator.de" data-i18n="contact.mail">E-Mail</a>
+            </div>
+
+            <div class="calloutBox">
+              <b data-i18n="contact.noteT">Pro-Tipp:</b>
+              <span data-i18n="contact.noteP">Wenn ihr Entlassbrief/Medikationsplan schon habt: haltet ihn bereit – das spart Zeit.</span>
+            </div>
+          </div>
+
+          <form class="form" action="#" method="post">
+            <h3 data-i18n="form.h">Kurzformular (Platzhalter)</h3>
+            <label>
+              <span data-i18n="form.name">Name</span>
+              <input type="text" name="name" placeholder="Max Mustermann" required />
+            </label>
+            <label>
+              <span data-i18n="form.phone">Telefon</span>
+              <input type="tel" name="phone" placeholder="+49 ..." required />
+            </label>
+            <label>
+              <span data-i18n="form.plz">PLZ</span>
+              <input type="text" name="plz" placeholder="10115" required />
+            </label>
+            <label>
+              <span data-i18n="form.date">Entlassdatum</span>
+              <input type="date" name="date" required />
+            </label>
+            <label>
+              <span data-i18n="form.need">Bedarf (kurz)</span>
+              <textarea name="need" rows="4" placeholder="z.B. Wunde, Medikamente, Hilfsmittel, Betreuung" required></textarea>
+            </label>
+
+            <label class="consent">
+              <input type="checkbox" required />
+              <span data-i18n="form.consent">
+                Ich akzeptiere die <a href="datenschutz.html">Datenschutzhinweise</a>.
+              </span>
+            </label>
+
+            <button class="btn btn--primary btn--full" type="submit" data-i18n="form.send">
+              Anfrage senden
+            </button>
+
+            <p class="fine" data-i18n="form.fine">
+              Dieses Formular ist ein Platzhalter. Für produktiv: DSGVO-konformes Formular + sichere Übermittlung.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="brand__name">Care-Orchestrator</div>
+        <p class="muted" data-i18n="footer.tag">Koordination nach Krankenhaus-Entlassung (privat)</p>
+        <p class="fine" data-i18n="footer.disc">
+          Keine medizinische Beratung. In Notfällen 112.
+        </p>
+      </div>
+
+      <div>
+        <h4 data-i18n="footer.links">Links</h4>
+        <ul>
+          <li><a href="#ablauf" data-i18n="nav.flow">Ablauf</a></li>
+          <li><a href="#pakete" data-i18n="nav.packages">Pakete</a></li>
+          <li><a href="#usecases" data-i18n="nav.usecases">Use-Cases</a></li>
+          <li><a href="#kontakt" data-i18n="nav.contact">Kontakt</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 data-i18n="footer.legal">Rechtliches</h4>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="agb.html">AGB</a></li>
+          <li><a href="widerruf.html">Widerruf</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <span class="fine">© <span id="year"></span> Care-Orchestrator</span>
+      <span class="fine">•</span>
+      <a class="fine" href="mailto:kontakt@care-orchestrator.de">kontakt@care-orchestrator.de</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
